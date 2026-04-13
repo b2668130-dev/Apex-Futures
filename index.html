@@ -149,7 +149,7 @@
   });
   function saveKey(){
     const v=document.getElementById('apiKeyInput').value.trim();
-    if(!v.startsWith('sk-')){alert('Please enter a valid Anthropic API key');return;}
+    if(!v||v.length<20){alert('Key too short - paste the full key');return;}
     localStorage.setItem('apex_api_key',v);apiKey=v;showMain();
   }
   function showMain(){
