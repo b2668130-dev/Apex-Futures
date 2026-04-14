@@ -110,7 +110,7 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Space 
   </div>
 </div>
 <script>
-const KEY='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';
+const KEY='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';
 const SP=`You are an expert crypto futures trader. Respond ONLY in raw JSON, no markdown, no backticks, no extra text. Use this exact structure: {"verdict":"LONG or SHORT or NO TRADE or WAIT","confidence":number 1-100,"entry":"price","stopLoss":"price","target1":"price","target2":"price","riskReward":"e.g. 1:2.5","leverage":"e.g. 5x-10x","summary":"2-3 sentence analysis","keyLevels":["level1","level2"],"risks":["risk1","risk2"],"marketContext":"brief note"}`;
 let messages=[],loading=false;
 const VS={LONG:{bg:'#0d2e1a',border:'#00ff88',color:'#00ff88'},SHORT:{bg:'#2e0d0d',border:'#ff4455',color:'#ff4455'},'NO TRADE':{bg:'#1a1a0d',border:'#ffaa00',color:'#ffaa00'},WAIT:{bg:'#0d1a2e',border:'#4488ff',color:'#4488ff'},READY:{bg:'#0d0d1a',border:'#8866ff',color:'#8866ff'}};
